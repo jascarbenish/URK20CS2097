@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="EXP5.css">
+        <script src="WEBTECH JS EXP5.js"></script>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1 style="text-align: center;">QUESTION PALACE</h1>
+            </div>
+            <nav>
+                <ul class="title">
+                    <input type="text" placeholder="Search" style="border-radius: 12px; height:30px; width:170px; text-align: center; ">
+                    <li><a href="HOME">HOME</a></li>
+                    <li><a href="ABOUT">ABOUT US</a></li>
+                    <li><a href="SUPPORT">SUPPORT</a></li>
+                    <li><a href="REVIEW">REVIEW</a></li>
+                    <li>|</li>
+                    <li><a href="SIGN UP">SING UP</a></li>
+                    <li><a href="lOG IN">LOG IN</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <ul class="quest" id="navbar">
+                <li><a href="#q1">QUESTION 1</a></li>
+                <li><a href="#q2">QUESTION 2</a></li>
+                <li><a href="#q3">QUESTION 3</a></li>
+                <li><a href="#q4">QUESTION 4</a></li>
+                <li><a href="#q5">QUESTION 5</a></li>
+                <li><a href="#q6">QUESTION 6</a></li>
+            </ul>
+        </div>
+        <fieldset align="center">
+            <legend align = 'center' id="q1"><h1>Shortest-Longest Word!</h1></legend>
+            String: <input id="string" type="text"><br><br>
+            <button type="submit" onclick="string()">Find</button> <br>
+            <p id="outputmin"></p>
+            <p id="outputmax"></p>
+            </fieldset>
+            <fieldset align="center">
+            
+            <legend align = 'center'id="q2"><h1>Calculate your BMI!</h1></legend>
+            Weight (in kgs): <input id="weight" type="text"><br><br>
+            Height (in cms): <input id="height" type="text"><br><br>
+            <button onclick="bmi()">Calculate</button><br>
+            <p id="bmi"></p>
+            <p id="result"></p>
+            </fieldset>
+            <fieldset>
+            <legend align = 'center' id="q3"><h1>Fruit Farm!</h1></legend>
+            Rows: <input id="rows" type="text"><br><br>
+            Columns: <input id="cols" type="text"><br><br>
+            <button onclick="grow()">Plant Garden</button><br><br>
+            <div id="garden"></div><br>
+            </fieldset>
+            <fieldset>
+            <legend align = 'center' id="q4"><h1>Currency Convertor!</h1></legend>
+            Convert <input type="text" id="amt">
+            <select id="from">
+            <option value="USD">USD</option>
+            <option value="INR">INR</option>
+            </select>
+            to
+            <select id ="to">
+            <option value="INR">INR</option>
+            <option value="USD">USD</option>
+            </select><br><br>
+            <button onclick="convert()">Convert</button><br><br>
+            <span id="answer"></span><br><br>
+            </fieldset>
+            <fieldset>
+            <legend align = 'center' id="q5"><h1>Heads or Tails?</h1></legend>
+            <div>
+            <figure><img src="pic/Head.jpg" id="coin" height="300px"
+            width="300px"><br></figure>
+            </div></span>
+            <button onclick="flip()">Flip</button>
+            <p>
+            Heads Total: <span id="num_heads">0</span><br><br>
+            Tails Total: <span id="num_tails">0</span><br><br>
+            </p>
+            </fieldset>
+            <fieldset>
+            <legend align = 'center' id="q6"><h1>Birthday Cake Order Form</h1></legend>
+            # 1/2kg Cakes:&nbsp; <input type="text" id="small"><br><br>
+            # 1kg Cakes:&nbsp; <input type="text" id="medium"><br><br>
+            # 2kg Cakes:&nbsp; <input type="text" id="large"><br><br>
+            
+            <label><input type="radio" value="10" name="tip">10%</label>
+            <label><input type="radio" value="15" name="tip"
+            checked="checked">15%</label>
+            <label ><input type="radio" value="20" name="tip">20%</label><br><br>
+            <button id="submit" onclick="bill()">Calculate price</button><br><br>
+            <span id="price"></span><br><br>
+            </fieldset>
+            </body>
+            </html>
+    </body>
+</html>
